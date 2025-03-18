@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/stud/S5664649/Desktop/labo1PCAD/philo2.c
+stdio.h
+-
+stdlib.h
+-
+pthread.h
+-
+string.h
+-
+unistd.h
+-
+

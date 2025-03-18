@@ -1,14 +1,12 @@
 [
 {
-  "directory": "/Users/russellbonelli/Library/Mobile Documents/com~apple~CloudDocs/UNI/PCAD/labo1CC/build",
-  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -pthread -Wall -o CMakeFiles/philo.dir/philo.c.o -c \"/Users/russellbonelli/Library/Mobile Documents/com~apple~CloudDocs/UNI/PCAD/labo1CC/philo.c\"",
-  "file": "/Users/russellbonelli/Library/Mobile Documents/com~apple~CloudDocs/UNI/PCAD/labo1CC/philo.c",
-  "output": "CMakeFiles/philo.dir/philo.c.o"
+  "directory": "/home/stud/S5664649/Desktop/labo1PCAD/build",
+  "command": "/usr/bin/gcc   -g -pthread -Wall -o CMakeFiles/philo2.dir/philo2.c.o -c /home/stud/S5664649/Desktop/labo1PCAD/philo2.c",
+  "file": "/home/stud/S5664649/Desktop/labo1PCAD/philo2.c"
 },
 {
-  "directory": "/Users/russellbonelli/Library/Mobile Documents/com~apple~CloudDocs/UNI/PCAD/labo1CC/build",
-  "command": "/usr/bin/clang   -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -pthread -Wall -o CMakeFiles/philo2.dir/philo2.c.o -c \"/Users/russellbonelli/Library/Mobile Documents/com~apple~CloudDocs/UNI/PCAD/labo1CC/philo2.c\"",
-  "file": "/Users/russellbonelli/Library/Mobile Documents/com~apple~CloudDocs/UNI/PCAD/labo1CC/philo2.c",
-  "output": "CMakeFiles/philo2.dir/philo2.c.o"
+  "directory": "/home/stud/S5664649/Desktop/labo1PCAD/build",
+  "command": "/usr/bin/gcc   -g -pthread -Wall -o CMakeFiles/philo.dir/philo.c.o -c /home/stud/S5664649/Desktop/labo1PCAD/philo.c",
+  "file": "/home/stud/S5664649/Desktop/labo1PCAD/philo.c"
 }
 ]
