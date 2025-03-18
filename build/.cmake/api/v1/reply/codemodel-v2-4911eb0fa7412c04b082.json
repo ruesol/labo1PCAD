@@ -1,0 +1,69 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "labo1CC",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "philo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-philo-Debug-bfdbd9a0fc729fc653d7.json",
+					"name" : "philo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "philo2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-philo2-Debug-81702cc55b1c7cf78f66.json",
+					"name" : "philo2",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/russellbonelli/Library/Mobile Documents/com~apple~CloudDocs/UNI/PCAD/labo1CC/build",
+		"source" : "/Users/russellbonelli/Library/Mobile Documents/com~apple~CloudDocs/UNI/PCAD/labo1CC"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

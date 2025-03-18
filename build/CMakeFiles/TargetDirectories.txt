@@ -1,0 +1,4 @@
+/Users/russellbonelli/Library/Mobile Documents/com~apple~CloudDocs/UNI/PCAD/labo1CC/build/CMakeFiles/philo.dir
+/Users/russellbonelli/Library/Mobile Documents/com~apple~CloudDocs/UNI/PCAD/labo1CC/build/CMakeFiles/philo2.dir
+/Users/russellbonelli/Library/Mobile Documents/com~apple~CloudDocs/UNI/PCAD/labo1CC/build/CMakeFiles/edit_cache.dir
+/Users/russellbonelli/Library/Mobile Documents/com~apple~CloudDocs/UNI/PCAD/labo1CC/build/CMakeFiles/rebuild_cache.dir
