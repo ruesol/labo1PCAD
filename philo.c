@@ -56,22 +56,27 @@ void *philo_life(void *ptr){
 }
 
 int main(){
-  pthread_t philo[Num_philo];
-  for (size_t i = 0; i < Num_philo; i++)
+    pthread_t philo[Num_philo];
+    for (size_t i = 0; i < Num_philo; i++)
     {
         pthread_mutex_init(&lock[i], NULL);
     }
     int id[Num_philo];
-  for (size_t i = 0; i < Num_philo; i++)
-  {
-    id[i] = i;
-    pthread_create(&philo[i],NULL,philo_life,&id[i]);
-  }
-  
-  for (size_t i = 0; i < Num_philo; i++)
-  {
-    pthread_join(philo[i],NULL);
-  }
+
+    for (size_t j = 0; j < Num_philo*10; j++)
+    {
+        for (size_t i = 0; i < Num_philo; i++)
+        {
+            id[i] = i;
+            pthread_create(&philo[i],NULL,philo_life,&id[i]);
+        }
+      
+        for (size_t i = 0; i < Num_philo; i++)
+        {
+            pthread_join(philo[i],NULL);
+        }
+        printf("Fine giro %ld.\n", j);
+    }
   printf("Programma finito.\n");
   return 0;
 }

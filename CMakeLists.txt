@@ -6,3 +6,6 @@ target_compile_options(philo PRIVATE -pthread -Wall)
 
 add_executable(philo2 philo2.c)
 target_compile_options(philo2 PRIVATE -pthread -Wall)
+
+add_executable(my_barrier barrier.c)
+target_compile_options(my_barrier PRIVATE -pthread -Wall)
