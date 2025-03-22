@@ -55,12 +55,17 @@ void think(){
 }
 void pick_stick(int i, int philo_index, int has_already_one_stick) {
     pthread_mutex_lock(&philo_res.lock_on_res);
-
+ /*
     while (philo_res.stick[i] == 1) {
         philo_res.state[philo_index] = WAITING;
         pthread_cond_wait(&philo_res.varcond, &philo_res.lock_on_res);
     }
-
+*/
+    if (philo_res.stick[i] == 1) {
+        philo_res.state[philo_index] = WAITING;
+        pthread_mutex_unlock(&philo_res.lock_on_res);
+        return;
+    }
     philo_res.stick[i] = 1;
     pthread_mutex_lock(&philo_res.lock_on_stick[i]);
     if (has_already_one_stick) {
@@ -80,7 +85,7 @@ void eat(int i) {
     print_philo_states();
     pthread_mutex_lock(&philo_res.lock_on_res);
 
-    usleep(100);
+    usleep(500);
 
     if (pthread_mutex_unlock(&philo_res.lock_on_stick[i])) {
         printf("Problem with unlocking mutex %d.\n", i);
@@ -131,7 +136,7 @@ int main(){
         philo_res.stick[i] = 0;
     }
     int id[Num_philo];
-    for (size_t j = 0; j < Num_philo * 100; j++) {
+    for (size_t j = 0; j < Num_philo * 200; j++) {
         for (size_t i = 0; i < Num_philo; i++) {
             id[i] = i;
             pthread_create(&philo[i], NULL, philo_life, &id[i]);
